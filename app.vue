@@ -117,7 +117,7 @@ const projects = ref([
   },
   {
     title: "Clear ERP System",
-    description: "Built a all-in-one ERP for local businesses",
+    description: "Built an all-in-one ERP for local businesses",
     technologies: ["Qt", "Vue", "React Native", "GraphQL", "MySQL"],
     features: [
       "Product catalog",
@@ -433,7 +433,7 @@ const projects = ref([
     <!-- Footer -->
     <footer class="py-8 bg-gray-900 text-white">
       <div class="container mx-auto px-6 text-center">
-        <p>&copy; 2023 Bozaid Ahmed Egnaidi. All rights reserved.</p>
+        <p>&copy; 2023 Bouzeed Ahmed Egnaidi. All rights reserved.</p>
       </div>
     </footer>
   </div>
