@@ -1,5 +1,5 @@
 <template>
   <div>
-    hello world!
+    welcom to my portfolio page.
   </div>
 </template>
