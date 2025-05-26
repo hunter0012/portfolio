@@ -2,11 +2,11 @@
 import { ref } from 'vue';
 
 const personalInfo = ref({
-  name: "Bozaid Ahmed Egnaidi",
+  name: "Bouzeed Ahmed Egnaidi",
   title: "Full Stack Developer & Technical Support Specialist",
   location: "Airport Road, Tripoli, Libya",
-  phone: "0928650603",
-  email: "bozaid.egnaidi@gmail.com"
+  phone: "+218 92 865 06 03",
+  email: "bouzeed.egnaidi@gmail.com"
 });
 
 const skills = ref({
@@ -43,6 +43,26 @@ const experience = ref([
       "Ensured data accuracy and integrity",
       "Developed efficient data management systems"
     ]
+  },
+  {
+    company: "Metiga Military Hospital",
+    position: "IT Support",
+    period: "2023 - Present",
+    responsibilities: [
+      "Managed networks",
+      "System adminstation",
+      "Operation"
+    ]
+  },
+  {
+    company: "Self-Employed",
+    position: "Software Engineer",
+    period: "2021 - Present",
+    responsibilities: [
+      "Design and Develop Busniss software solotions",
+      "full stack web development",
+      "mobile app development"
+    ]
   }
 ]);
 
@@ -54,13 +74,23 @@ const education = ref([
   },
   {
     institution: "Next Academy",
-    course: "Entrepreneurship",
-    year: "Recent"
+    course: "Accounting for Non-Accountants",
+    year: "2019"
   },
   {
     institution: "Tripoli University",
-    course: "Accounting for Non-Accountants",
-    year: "Recent"
+    course: "Entrepreneurship",
+    year: "2019"
+  },
+  {
+    institution: "International Collage",
+    course: "Upper Intermediate A+B English",
+    year: "2024"
+  },
+  {
+    institution: "DT Center",
+    course: "IELTS Preporation",
+    year: "2025"
   }
 ]);
 
@@ -84,6 +114,16 @@ const projects = ref([
       "Secure payment processing",
       "Real-time order tracking"
     ]
+  },
+  {
+    title: "Clear ERP System",
+    description: "Built a all-in-one ERP for local businesses",
+    technologies: ["Qt", "Vue", "React Native", "GraphQL", "MySQL"],
+    features: [
+      "Product catalog",
+      "Real-time order tracking",
+      "Accounting"
+    ]
   }
 ]);
 </script>
@@ -93,7 +133,7 @@ const projects = ref([
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
       <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold text-indigo-700">Bozaid Egnaidi</h1>
+        <h1 class="text-xl font-bold text-indigo-700">Bouzeed Egnaidi</h1>
         <nav class="hidden md:flex space-x-8">
           <a href="#about" class="hover:text-indigo-600 transition">About</a>
           <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
