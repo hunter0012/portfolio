@@ -3,130 +3,111 @@ import { ref } from 'vue';
 
 const personalInfo = ref({
   name: "Bouzeed Ahmed Egnaidi",
-  title: "Full Stack Developer & Technical Support Specialist",
+  title: "Full-Stack Developer & Technical Support Specialist",
   location: "Airport Road, Tripoli, Libya",
-  phone: "+218 92 865 06 03",
+  phone: "+218 92 856 0503",
   email: "bouzeed.egnaidi@gmail.com"
 });
 
 const skills = ref({
   programming: ["C/C++", "PHP", "Python", "JavaScript", "Assembly", "C#"],
   databases: ["MySQL", "MongoDB", "SQL", "SQLite"],
-  platforms: ["QT", "Node.js", "Vue.js", "React", "React Native"],
-  backend: ["GraphQL", "REST API"],
-  frontend: ["Bootstrap", "Material UI", "Tailwind"],
-  erp: ["Odoo ERP Development", "Clear ERP"]
+  platforms: ["Qt", "Node.js", "Vue.js", "React", "React Native"],
+  backend: ["GraphQL", "REST APIs", "Docker"],
+  frontend: ["Bootstrap", "Material UI", "Tailwind CSS"],
+  erp: ["Odoo ERP Development", "Clear ERP System"]
 });
 
 const languages = ref([
   { name: "Arabic", level: "Native" },
-  { name: "English", level: "Professional Working Proficiency" }
+  { name: "English", level: "Professional Proficiency" }
 ]);
 
 const experience = ref([
   {
     company: "Aboghris Soft",
-    position: "Technical Support",
-    period: "05/2019 - 05/2022",
+    position: "Technical Support Specialist",
+    period: "May 2019 – May 2022",
     responsibilities: [
-      "Provided technical support for software solutions",
-      "Troubleshot and resolved system issues",
-      "Assisted with software implementations"
-    ]
-  },
-  {
-    company: "Self-Employed",
-    position: "Data Entry Specialist",
-    period: "2023 - Present",
-    responsibilities: [
-      "Managed data processing and entry tasks",
-      "Ensured data accuracy and integrity",
-      "Developed efficient data management systems"
+      "Provided end-user and client support for in-house software",
+      "Diagnosed and resolved technical issues to maintain workflow continuity",
+      "Participated in software deployments and training sessions"
     ]
   },
   {
     company: "Metiga Military Hospital",
-    position: "IT Support",
-    period: "2023 - Present",
+    position: "IT Support Technician",
+    period: "2023 – Present",
     responsibilities: [
-      "Managed networks",
-      "System adminstation",
-      "Operation"
+      "Administered network infrastructure and system access",
+      "Oversaw maintenance of hardware and software across departments",
+      "Trained staff and documented IT protocols"
     ]
   },
   {
     company: "Self-Employed",
     position: "Software Engineer",
-    period: "2021 - Present",
+    period: "2021 – Present",
     responsibilities: [
-      "Design and Develop Busniss software solotions",
-      "full stack web development",
-      "mobile app development"
+      "Designed and built business software and automation tools",
+      "Delivered full-stack web applications with mobile support",
+      "Maintained custom ERP systems and databases"
+    ]
+  },
+  {
+    company: "Self-Employed",
+    position: "Data Entry Specialist",
+    period: "2023 – Present",
+    responsibilities: [
+      "Managed high-volume data entry tasks with precision",
+      "Created internal tools to speed up entry processes",
+      "Standardized data formats for reporting accuracy"
     ]
   }
 ]);
 
 const education = ref([
-  {
-    institution: "IT College, Tripoli University",
-    degree: "Bachelor in Mobile Computing",
-    year: "2018"
-  },
-  {
-    institution: "Next Academy",
-    course: "Accounting for Non-Accountants",
-    year: "2019"
-  },
-  {
-    institution: "Tripoli University",
-    course: "Entrepreneurship",
-    year: "2019"
-  },
-  {
-    institution: "International Collage",
-    course: "Upper Intermediate A+B English",
-    year: "2024"
-  },
-  {
-    institution: "DT Center",
-    course: "IELTS Preporation",
-    year: "2025"
-  }
+  { institution: "Tripoli University", degree: "Bachelor's in Mobile Computing", year: "2018" },
+  { institution: "Next Academy", course: "Accounting for Non-Accountants", year: "2019" },
+  { institution: "Tripoli University", course: "Entrepreneurship", year: "2019" },
+  { institution: "International College", course: "Upper-Intermediate A+B English", year: "2024" },
+  { institution: "DT Center", course: "IELTS Preparation", year: "2025" }
 ]);
 
 const projects = ref([
   {
     title: "Odoo ERP Customization",
-    description: "Developed custom modules for Odoo ERP system to streamline business processes",
+    description: "Extended the Odoo ERP framework to suit specific business workflows.",
     technologies: ["Python", "Odoo", "PostgreSQL"],
     features: [
-      "Custom inventory management",
-      "Automated reporting",
-      "Integration with payment systems"
+      "Customized inventory and procurement modules",
+      "Automated sales reporting and financial summaries",
+      "Integrated Libyan bank payment gateway"
     ]
   },
   {
     title: "Mobile Commerce App",
-    description: "Built a cross-platform mobile application for local businesses",
+    description: "Cross-platform app for business owners to manage sales and deliveries.",
     technologies: ["React Native", "Node.js", "MongoDB"],
     features: [
-      "Product catalog",
-      "Secure payment processing",
-      "Real-time order tracking"
+      "Real-time order tracking",
+      "Customer notifications and payment confirmation",
+      "User-friendly product listing interface"
     ]
   },
   {
     title: "Clear ERP System",
-    description: "Built an all-in-one ERP for local businesses",
-    technologies: ["Qt", "Vue", "React Native", "GraphQL", "MySQL"],
+    description: "Full-feature ERP desktop and mobile suite for SMBs.",
+    technologies: ["Qt", "Vue.js", "React Native", "GraphQL", "MySQL"],
     features: [
-      "Product catalog",
-      "Real-time order tracking",
-      "Accounting"
+      "Inventory and order flow automation",
+      "Accounting module with reporting engine",
+      "Multi-platform sync and real-time updates"
     ]
   }
 ]);
 </script>
+
 
 <template>
   <div class="min-h-screen bg-gray-50 text-gray-800 font-sans">
@@ -146,15 +127,14 @@ const projects = ref([
     <!-- Hero Section -->
     <section id="about" class="py-20 bg-gradient-to-r from-indigo-700 to-blue-600 text-white">
       <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-        
+                
         <div class="md:w-1/2 flex justify-center mb-10">
           <div class="bg-white p-1 rounded-full shadow-xl">
-            <div class="bg-gray-200 w-64 h-64 rounded-full overflow-hidden">
-              <!-- Placeholder for profile image -->
-              <div class="w-full h-full flex items-center justify-center bg-indigo-100 text-indigo-700 text-4xl font-bold">
-                BE
-              </div>
-            </div>
+            <img 
+              src="assets/images/profile.jpg" 
+              alt="Bozaid Ahmed Egnaidi"
+              class="w-64 h-64 rounded-full object-cover"
+            >
           </div>
         </div>
 

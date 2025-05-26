@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bouzeed Ahmed Egnaidi - CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary: #1e293b;
+      --light: #f8fafc;
+      --gray: #94a3b8;
+      --dark-gray: #64748b;
+      --border: #e2e8f0;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--secondary);
+      line-height: 1.5;
+      font-size: 12pt;
+      background-color: white;
+    }
+    
+    .container {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 0;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    h1 {
+      color: var(--primary);
+      font-size: 24pt;
+      margin-bottom: 0.25rem;
+      font-weight: 700;
+    }
+    
+    .tagline {
+      font-size: 14pt;
+      color: var(--dark-gray);
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+    
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: var(--secondary);
+      font-size: 10pt;
+    }
+    
+    h2 {
+      color: var(--primary);
+      font-size: 14pt;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border);
+      font-weight: 600;
+      page-break-after: avoid;
+    }
+    
+    .section {
+      margin-bottom: 1.5rem;
+      page-break-inside: avoid;
+    }
+    
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(70mm, 1fr));
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    
+    .skill-category {
+      padding: 0.5rem;
+    }
+    
+    .skill-category h3 {
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+      color: var(--primary-dark);
+      font-size: 11pt;
+    }
+    
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 10pt;
+    }
+    
+    .skills-list li {
+      margin-bottom: 0.2rem;
+      position: relative;
+      padding-left: 1rem;
+    }
+    
+    .skills-list li:before {
+      content: "•";
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+    }
+    
+    .experience {
+      margin-bottom: 1rem;
+    }
+    
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.25rem;
+    }
+    
+    .company {
+      font-weight: 600;
+      color: var(--primary-dark);
+      font-size: 11pt;
+    }
+    
+    .date {
+      color: var(--dark-gray);
+      font-size: 10pt;
+    }
+    
+    .position {
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      font-size: 10pt;
+    }
+    
+    .responsibilities {
+      list-style: none;
+      padding-left: 1rem;
+      margin: 0.5rem 0;
+      font-size: 10pt;
+    }
+    
+    .responsibilities li {
+      margin-bottom: 0.25rem;
+      position: relative;
+    }
+    
+    .responsibilities li:before {
+      content: "▹";
+      color: var(--primary);
+      position: absolute;
+      left: -1rem;
+      font-size: 8pt;
+    }
+    
+    .project {
+      margin-bottom: 1rem;
+    }
+    
+    .project-title {
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-bottom: 0.25rem;
+      font-size: 11pt;
+    }
+    
+    .project-tech {
+      font-size: 9pt;
+      color: var(--dark-gray);
+      margin-bottom: 0.25rem;
+      font-style: italic;
+    }
+    
+    .language-item {
+      display: flex;
+      /* justify-content: space-between; */
+      max-width: 600px;
+      margin-bottom: 0.25rem;
+      font-size: 10pt;
+      margin-left: 10;
+    }
+    
+    .language-name {
+      font-weight: 500;
+      /* min-width: 500; */
+      flex: 1;
+      text-align: center;
+    }
+    
+    .language-level {
+      color: var(--dark-gray);
+      flex: 1;
+      /* width: 500; */
+      /* background-color: #1e293b; */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    @media print {
+      body {
+        font-size: 11pt;
+      }
+      .container {
+        padding: 0;
+      }
+      header {
+        margin-bottom: 1rem;
+      }
+      .section {
+        margin-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+
+    
+  @media print {
+    @page {
+      size: A4;
+      margin: 1.5cm;
+      /* This removes the automatic URL/path footer */
+      margin-bottom: 0.5cm; /* Adjust as needed */
+    }
+
+    /* Show page numbers */
+    body::after {
+      content: counter(page);
+      position: fixed;
+      bottom: 0;
+      right: 1cm;
+      font-size: 10pt;
+      color: #666;
+    }
+
+    /* Hide the default browser footer with file path */
+    @page {
+      @bottom-right {
+        content: none;
+      }
+      @bottom-left {
+        content: none;
+      }
+    }
+  
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bouzeed Ahmed Egnaidi</h1>
+      <p class="tagline">Full-Stack Developer & Technical Support Specialist</p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>📍</span>
+          <span>Airport Road, Tripoli, Libya</span>
+        </div>
+        <div class="contact-item">
+          <span>📱</span>
+          <span>+218 92 856 0503</span>
+        </div>
+        <div class="contact-item">
+          <span>✉️</span>
+          <span>bouzeed.egnaidi@gmail.com</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Programming</h3>
+          <ul class="skills-list">
+            <li>C/C++</li>
+            <li>QML</li>
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <ul class="skills-list">
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>SQL</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul class="skills-list">
+            <li>Vue.js</li>
+            <li>React</li>
+            <li>React Native</li>
+            <li>Bootstrap</li>
+            <li>Material UI</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>Frameworkds</h3>
+          <ul class="skills-list">
+            <li>Node.js</li>
+            <li>Qt</li>
+            <li>.Net</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend/DevOps</h3>
+          <ul class="skills-list">
+            <li>GraphQL</li>
+            <li>REST APIs</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <h3>ERP Systems</h3>
+          <ul class="skills-list">
+            <li>Odoo ERP Development</li>
+            <li>Clear ERP System</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Languages</h2>
+      <div class="language-item">
+        <span class="language-name">Arabic</span>
+        <span class="language-level">Native</span>
+      </div>
+      <div class="language-item">
+        <span class="language-name">English</span>
+        <span class="language-level">Professional Proficiency</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Professional Experience</h2>
+
+      <div class="experience">
+        <div class="experience-header">
+          <span class="company">Aboghris Soft</span>
+          <span class="date">May 2019 – May 2022</span>
+        </div>
+        <div class="position">Technical Support Specialist</div>
+        <ul class="responsibilities">
+          <li>Provided end-user and client support for in-house software</li>
+          <li>Diagnosed and resolved technical issues to maintain workflow continuity</li>
+          <li>Participated in software deployments and training sessions</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <div class="experience-header">
+          <span class="company">Metiga Military Hospital</span>
+          <span class="date">2023 – Present</span>
+        </div>
+        <div class="position">IT Support Technician</div>
+        <ul class="responsibilities">
+          <li>Administered network infrastructure and system access</li>
+          <li>Oversaw maintenance of hardware and software across departments</li>
+          <li>Trained staff and documented IT protocols</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <div class="experience-header">
+          <span class="company">Self-Employed</span>
+          <span class="date">2021 – Present</span>
+        </div>
+        <div class="position">Software Engineer</div>
+        <ul class="responsibilities">
+          <li>Designed and built business software and automation tools</li>
+          <li>Delivered full-stack web applications with mobile support</li>
+          <li>Maintained custom ERP systems and databases</li>
+        </ul>
+      </div>
+
+      <div class="experience">
+        <div class="experience-header">
+          <span class="company">Self-Employed</span>
+          <span class="date">2023 – Present</span>
+        </div>
+        <div class="position">Data Entry Specialist</div>
+        <ul class="responsibilities">
+          <li>Managed high-volume data entry tasks with precision</li>
+          <li>Created internal tools to speed up entry processes</li>
+          <li>Standardized data formats for reporting accuracy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Education & Certifications</h2>
+      <ul class="responsibilities">
+        <li><strong>Tripoli University</strong> — Bachelor's in Mobile Computing (2018)</li>
+        <li><strong>Next Academy</strong> — Accounting for Non-Accountants (2019)</li>
+        <li><strong>Tripoli University</strong> — Entrepreneurship (2019)</li>
+        <li><strong>International College</strong> — Upper-Intermediate A+B English (2024)</li>
+        <li><strong>DT Center</strong> — IELTS Preparation (2025)</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Notable Projects</h2>
+
+      <div class="project">
+        <div class="project-title">Odoo ERP Customization</div>
+        <div class="project-tech">Python | Odoo | PostgreSQL</div>
+        <p>Extended the Odoo ERP framework to suit specific business workflows.</p>
+        <ul class="responsibilities">
+          <li>Customized inventory and procurement modules</li>
+          <li>Automated sales reporting and financial summaries</li>
+          <li>Integrated Libyan bank payment gateway</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Mobile Commerce App</div>
+        <div class="project-tech">React Native | Node.js | MongoDB</div>
+        <p>Cross-platform app for business owners to manage sales and deliveries.</p>
+        <ul class="responsibilities">
+          <li>Real-time order tracking</li>
+          <li>Customer notifications and payment confirmation</li>
+          <li>User-friendly product listing interface</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Clear ERP System</div>
+        <div class="project-tech">Qt | Vue.js | React Native | GraphQL | MySQL</div>
+        <p>Full-feature ERP desktop and mobile suite for SMBs.</p>
+        <ul class="responsibilities">
+          <li>Inventory and order flow automation</li>
+          <li>Accounting module with reporting engine</li>
+          <li>Multi-platform sync and real-time updates</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
