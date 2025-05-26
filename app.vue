@@ -1,5 +1,11 @@
 <script setup>
 import { ref } from 'vue';
+// import profileImage from 'profile.jpg'
+
+// const imgSrc = process.dev 
+//   ? '@/assets/images/profile.jpg'
+//   : './_nuxt/profile.AQG6oGJ-.jpg'
+
 
 const personalInfo = ref({
   name: "Bouzeed Ahmed Egnaidi",
@@ -133,11 +139,11 @@ const projects = ref([
                 
         <div class="md:w-1/2 flex justify-center mb-10">
           <div class="bg-white p-1 rounded-full shadow-xl">
-            <img 
-              src="assets/images/profile.jpg" 
+            <img
+              src="/images/profile.jpg"
               alt="Bozaid Ahmed Egnaidi"
               class="w-64 h-64 rounded-full object-cover"
-            >
+            />
           </div>
         </div>
 

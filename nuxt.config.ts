@@ -23,13 +23,26 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       require('@tailwindcss/vite')
-    ]
+    ],
+    base: '/' // makes paths relative
   },
-
+  image: {
+    dir: 'public/images', // explicitly set image directory
+    domains: [],
+    presets: {
+      default: {
+        modifiers: {
+          format: 'webp',
+          quality: 80
+        }
+      }
+    }
+  },
   app: {
-    baseURL: '/portfolio/', // Change to your repo name
+    baseURL: '/',// or empty string if serving from root
+    buildAssetsDir: '_nuxt/', // ensure this matches your setup
     head: {
-      title: 'My Portfolio',
+      title: 'Bouzeed',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
